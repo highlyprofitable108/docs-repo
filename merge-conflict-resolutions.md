@@ -16,9 +16,13 @@ To aid in resolving conflicts, several merge tools are available that provide a 
 While merge conflicts are sometimes inevitable in a collaborative development environment, certain best practices can significantly reduce their occurrence:
 
 **Regularly Pull Changes:** Encourage team members to pull changes from the main branch frequently to minimize the divergence between their work and the project's current state.
+
 **Smaller, Incremental Commits:**  Promote the practice of making smaller, more manageable commits and merges. This not only reduces the likelihood of conflicts but also makes them easier to resolve when they do occur.
+
 **Use Feature Branches:** Utilize feature branching strategies to isolate development work. This approach allows for focused development and testing before integrating changes into the main branch.
+
 **Communicate Openly and Often:** Foster an environment where team members communicate openly about their current work and upcoming changes. Tools like issue trackers, stand-ups, or chat applications can facilitate this communication.
+
 **Establish Clear Coding Standards:** Ensure that coding standards are clearly defined and adhered to by all team members. Consistent code structure and style can prevent conflicts related to formatting and conventions.
 
 ### Principles of Conflict Resolution
