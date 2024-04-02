@@ -19,7 +19,7 @@ Stale branches are defined as branches that have remained inactive for an extend
 
 #### Regular Monitoring and Cleanup
 - **Automated Cleanup**: Automated systems will handle the deletion of stale branches that have been merged. However, branches with unmerged changes will not be automatically deleted due to the potential loss of work.
-- **Code Review Integration**: The decision to keep or delete a branch will be integrated into the code review process. This ensures that branch management becomes a routine part of development workflows, encouraging proactive cleanup.
+- **Code Review Integration**: The decision to keep or delete a branch should be part of the code review process. This ensures that branch management becomes a routine part of development workflows, encouraging proactive cleanup.
 
 #### Communication and Collaboration
 Effective communication is crucial, especially for branches not covered by automated cleanup. Engineers should discuss the status and necessity of such branches during code reviews, ensuring collective agreement and understanding.
@@ -91,7 +91,6 @@ A branch exists with changes that were meant to be part of a feature, but due to
 **1. Answer:** B - Delete the branch. **Why?** Once a feature branch has been merged and there are no future plans for it, it's best practice to delete it to keep the repository clean and avoid clutter.
 
 **2. Answer:** B - Delete the branch. **Why?** If the branch has not been used (no commits beyond the main branch) and the issue it was intended for has been resolved, it should be deleted to maintain a clean repository.
-
 
 **3. Answer:** B - Delete the branch. **Why?** Even though the branch contains significant changes, if the feature is no longer planned and the branch has been inactive, it should be deleted to reduce repository clutter. Consider archiving the changes externally if necessary.
 
