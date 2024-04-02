@@ -101,7 +101,7 @@ Merging `feature-enhance-transactions` into `main` leads to a conflict due to di
 #### Objective
 Securely update the API client library and integrate transaction processing enhancements.
 
-### CLI Steps to Resolve (Added Practical Example)
+### CLI Steps to Resolve
 
 1. **Prepare Environment**:
    Ensure your local repository is current with both branches.
