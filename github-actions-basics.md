@@ -53,7 +53,44 @@ Workflows can be configured to run on a schedule using cron syntax, enabling aut
 - **Securely Manage Secrets** for any sensitive data needed by your workflows.
 - **Take Advantage of Scheduled Runs** for maintenance tasks or routine checks.
 
+### Composite Actions
+
+Composite actions allow you to combine multiple steps into a single action. Unlike individual actions that perform a singular task, composite actions bundle a set of commands, shell scripts, and other actions into one reusable action. This is particularly useful for encapsulating a sequence of steps that you find repeating across multiple workflows.
+
+#### Location and Usage
+
+Unlike workflow files, composite actions are defined in a dedicated repository and not in the .github/workflows directory. To use a composite action, you reference it in your workflow file with its repository name, much like you would with any other action.
+
+### Reusable Actions
+
+Reusable actions take the concept of DRY (Don't Repeat Yourself) to the next level in GitHub Actions. By allowing workflows to call other workflows, reusable actions enable you to share automation sequences across projects and repositories, reducing duplication and fostering consistency.
+
+#### Benefits
+Reusable actions simplify workflow management by centralizing common processes. They can be updated in a single location, with changes propagating to all workflows that utilize them.
+
+#### Location and Usage
+
+Defined in their own repository, reusable workflows are referenced in your workflow files using the uses keyword with the repository's URL. This approach differs from composite actions in that entire workflows, complete with jobs and steps, are reused.
+
+### Getting Started with Composite and Reusable Actions
+
+#### Creating Composite Actions:
+
+In a repository, create a new directory to house your action, e.g., .github/actions/<action_name>.
+Within this directory, add a action.yml file to define the action inputs, outputs, and the series of runs or commands that make up the action.
+
+Use the uses field in your workflow file to reference the composite action, specifying the path to the action.yml file.
+
+#### Implementing Reusable Workflows
+
+Define a standalone workflow in a repository, which includes jobs, steps, and actions as you would in any other workflow.
+
+In the calling workflow, use the uses keyword followed by the repository name and the path to the workflow file, along with any needed inputs.
+
+Reusable workflows can be invoked from the same repository or from a different one, making them highly versatile for cross-project automation.
+
 ### Conclusion
+
 GitHub Actions stands as a pivotal tool for automating and optimizing your software development workflows within the GitHub ecosystem. Through a deep understanding of workflows, actions, runners, and the strategic use of environment secrets and matrix builds, you can craft highly efficient and secure CI/CD pipelines. As you explore the vast possibilities offered by GitHub Actions, remember that experimentation and adaptation are key to unlocking the full potential of automated workflows tailored to your project's specific needs.
 
 ### Exercise: Building and Executing a Basic Ad-Hoc Action with Java
