@@ -9,7 +9,7 @@ Welcome to the Merge Conflict Resolution Guide. This document is designed to pro
 Merge conflicts occur when two branches in a version control system have made edits to the same part of a file and are merged together. These conflicts can arise from simultaneous edits, file deletions, or structural updates in the codebase and require manual intervention to resolve.
 
 #### Merge Tools
-To aid in resolving conflicts, several merge tools are available that provide a visual side-by-side comparison of conflicting changes. Popular tools include Beyond Compare, Meld, and the built-in tools within many integrated development environments (IDEs). These tools help identify, edit, and resolve conflicts more efficiently.
+To aid in resolving conflicts, several merge tools are available that provide a visual side-by-side comparison of conflicting changes. Popular tools icome built-in tools within many integrated development environments (IDEs) like Visual Studio. These tools help identify, edit, and resolve conflicts more efficiently.
 
 ### Principles of Conflict Resolution
 
